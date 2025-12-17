@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COVID-19 Interactive Dashboard</title>
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>COVID-19 Interactive Dashboard</h1>
+
+    <div class="controls">
+      <select id="country-select">
+        <option value="all">Global</option>
+        <option value="USA">United States</option>
+        <option value="India">India</option>
+        <option value="Brazil">Brazil</option>
+        <option value="UK">United Kingdom</option>
+      </select>
+
+      <button id="theme-toggle">🌙 Toggle Dark Mode</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Skeleton loaders -->
+    <section id="skeleton-cards" class="skeleton-container">
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+    </section>
+
+    <!-- Error message -->
+    <div id="error" class="error hidden">
+      ⚠️ Unable to load data. Please try again later.
+    </div>
+
+    <!-- Stats cards -->
+    <section id="stats-cards"></section>
+
+    <!-- Chart -->
+    <section id="charts">
+      <canvas id="mainChart"></canvas>
+    </section>
+
+    <!-- Last updated -->
+    <div id="last-updated"></div>
+
+  </main>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
