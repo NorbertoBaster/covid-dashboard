@@ -5,7 +5,7 @@ A modern, interactive COVID-19 dashboard showing global and country-specific dat
 
 Project Overview
 
-The COVID-19 Interactive Dashboard is a responsive, dynamic web application that visualizes the latest COVID-19 statistics using real-time data from the disease.sh API
+A responsive, dynamic web application that visualizes the latest COVID-19 statistics using real-time data from the disease.sh API
 .
 
 It displays key metrics such as total cases, deaths, and recoveries, and provides a daily cases chart to help users understand trends. Users can filter by country, switch between dark and light mode, and enjoy animated counters and skeleton loaders for a polished, professional experience.
